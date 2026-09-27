@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-09-27",
+  "purpose": "Local university-merging browser-game assets",
+  "notes": [
+    "Images are factual existing school insignia, downloaded rather than generated or redrawn.",
+    "All nine PNG files were opened and visually inspected for the correct school and completeness.",
+    "PNG originals are stored unchanged under stable filenames. Lanxiang's JPEG original is preserved and a PNG format conversion is also provided.",
+    "Preserve each image's intrinsic aspect ratio when fitting it into game tokens.",
+    "No missing assets. Lanxiang official website could not be fetched; its image was verified from the school name visible in the emblem, its Baike entry and a second descriptive reference.",
+    "School-emblem copyright/trademark rights remain with the respective schools; no broad open-content or commercial-use license was found."
+  ],
+  "assets": [
+    {
+      "id": "lanxiang",
+      "school_name": "山东蓝翔技师学院",
+      "game_display_name": "蓝翔技校",
+      "local_file": "logos/lanxiang.png",
+      "original_file": "logos/lanxiang-original.jpg",
+      "format": "PNG",
+      "original_format": "JPEG",
+      "width": 585,
+      "height": 585,
+      "background": "white",
+      "source_page_url": "https://www.baike.com/wikiid/7245472804572823584",
+      "image_url": "https://p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/16808516f3a64e599d6993ae2a59c80b~tplv-xv4ileqgde-image.image",
+      "source_type": "Third-party encyclopedia entry",
+      "license": {
+        "name": "No explicit reusable image license found",
+        "holder": "山东蓝翔技师学院 / respective rights holder",
+        "details": "The encyclopedia page identifies the school but does not provide a specific license for this emblem image."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "White background; complete red circular Chinese/English school-name emblem with globe grid and yellow bird.",
+        "crosscheck_url": "https://www.newton.com.tw/wiki/山東藍翔技師學院",
+        "official_site_attempted": "https://www.lxjx.cn/",
+        "uncertainty": "The official site failed to load during collection; source image is from Baike."
+      },
+      "processing": "Lossless PNG encoding of decoded JPEG pixels using System.Drawing; no drawing, cropping or recoloring."
+    },
+    {
+      "id": "njust",
+      "school_name": "南京理工大学",
+      "game_display_name": "南京理工大学",
+      "local_file": "logos/njust.png",
+      "original_file": "logos/njust.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4132010288",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/nanjing-university-of-science--technology-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "南京理工大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Purple round emblem with school name, book, gate, wreath and 1953."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "seu",
+      "school_name": "东南大学",
+      "game_display_name": "东南大学",
+      "local_file": "logos/seu.png",
+      "original_file": "logos/seu.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent outside emblem; original white/yellow/green interior retained",
+      "source_page_url": "https://www.urongda.com/logos/4132010286",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/southeast-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "东南大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Yellow/green/black round emblem; triangle, auditorium, 1902, 南京 and 止于至善."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "xjtu",
+      "school_name": "西安交通大学",
+      "game_display_name": "西安交通大学",
+      "local_file": "logos/xjtu.png",
+      "original_file": "logos/xjtu.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4161010698",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/xian-jiaotong-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "西安交通大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Red round emblem with Chinese/English school name, gear, anvil, books and 1896."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "zju",
+      "school_name": "浙江大学",
+      "game_display_name": "浙江大学",
+      "local_file": "logos/zju.png",
+      "original_file": "logos/zju.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4133010335",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/zhejiang-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "浙江大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Blue round emblem with Chinese/English school name, bird and 1897."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "fudan",
+      "school_name": "复旦大学",
+      "game_display_name": "复旦大学",
+      "local_file": "logos/fudan.png",
+      "original_file": "logos/fudan.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4131010246",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/fudan-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "复旦大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Blue round emblem with stylized Chinese name, FUDAN UNIVERSITY and 1905."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "tsinghua",
+      "school_name": "清华大学",
+      "game_display_name": "清华大学",
+      "local_file": "logos/tsinghua.png",
+      "original_file": "logos/tsinghua.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1035,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4111010003",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/tsinghua-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "清华大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Purple full round emblem with school name, star, motto and 1911."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "pku",
+      "school_name": "北京大学",
+      "game_display_name": "北京大学",
+      "local_file": "logos/pku.png",
+      "original_file": "logos/pku.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4111010001",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/peking-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "北京大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Dark red round emblem with stylized 北大, PEKING UNIVERSITY and 1898."
+      },
+      "processing": "None; original downloaded PNG preserved."
+    },
+    {
+      "id": "nju",
+      "school_name": "南京大学",
+      "game_display_name": "南京大学",
+      "local_file": "logos/nju.png",
+      "original_file": "logos/nju.png",
+      "format": "PNG",
+      "original_format": "PNG",
+      "width": 1024,
+      "height": 1251,
+      "background": "transparent",
+      "source_page_url": "https://www.urongda.com/logos/4132010284",
+      "image_url": "https://cdn.urongda.com/images/normal/medium/nanjing-university-logo-1024px.png",
+      "source_type": "Third-party university emblem resource collection",
+      "license": {
+        "name": "Rights reserved by the respective university; no open license",
+        "holder": "南京大学",
+        "license_information_url": "https://www.urongda.com/policy",
+        "details": "The collection states that emblem copyrights belong to the universities and describes limited lawful reasonable-use scenarios; other uses require rightsholder authorization. Download availability does not establish a broad reuse license."
+      },
+      "verification": {
+        "status": "visually verified",
+        "description": "Purple shield with stylized 南京大学, two pixiu, cedar/tree and book, NANJING UNIVERSITY and 1902.",
+        "crosscheck_url": "https://www.nju.edu.cn/ndgk/ndbs.htm",
+        "official_emblem_image_url": "https://www.nju.edu.cn/__local/F/7A/1D/91723945F34FAA0A9C67700CF8F_13B47AE2_E3A7.png"
+      },
+      "processing": "None; original downloaded PNG preserved."
+    }
+  ]
+}

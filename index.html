@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#692f85">
+  <meta name="description" content="从蓝翔技校出发，一路合成南京大学。投下校徽，让相同的学校相遇。">
+  <title>合成南京大学 · 一路向南大</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23692f85'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia' font-size='46' fill='white'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor/matter.min.js"></script>
+  <script defer src="js/game-core.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <a class="brand" href="./index.html" aria-label="合成南京大学首页"><span class="brand-mark">N<span>+</span></span><span><strong>合成南京大学</strong><small>NANJING UNIVERSITY · MERGE GAME</small></span></a>
+      <div class="header-actions">
+        <button id="help-button" class="icon-button" aria-label="查看玩法" title="查看玩法"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .2c0 1.8-2.5 1.8-2.5 3.8M12 16.5v.1"/></svg></button>
+        <button id="sound-button" class="icon-button" aria-label="关闭音效" aria-pressed="false" title="关闭音效"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4zM15 8c2 2 2 6 0 8M18 5c4 4 4 10 0 14"/></svg></button>
+        <button id="restart-button" class="text-button" aria-label="重新开始"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg><span>重新开始</span></button>
+      </div>
+    </header>
+
+    <main class="game-layout">
+      <aside class="dashboard" aria-label="游戏信息">
+        <div class="intro"><span class="eyebrow">一路向南大</span><h1>下一站，<br><em>南京大学。</em></h1><p>让相同的校徽相遇。</p></div>
+        <div class="score-card"><span class="label">本局得分</span><strong id="score">0</strong><div class="best-row"><svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2L3 9.6l6.2-.9z"/></svg><span>最佳纪录</span><b id="best">0</b></div></div>
+        <div class="next-card"><div><span class="label">下一枚校徽</span><strong id="next-name">准备中</strong></div><div class="next-badge"><img id="next-image" alt="下一枚校徽" width="48" height="48"></div></div>
+        <div class="goal-card"><div class="goal-icon"><img src="assets/logos/nju.png" alt="南京大学校徽" width="48" height="48"></div><div><span>终极目标 · LEVEL 09</span><strong>南京大学</strong></div><span class="goal-star">✦</span></div>
+        <p class="desktop-note">从一枚小小的校徽开始，<br>合成属于你的南大时刻。</p>
+      </aside>
+
+      <section class="arena-section" aria-label="合成游戏">
+        <div class="arena-top"><span class="live-label"><i></i><span id="game-status">准备出发</span></span><span id="current-label">蓝翔技校</span></div>
+        <div class="board-shell" id="board-shell">
+          <canvas id="game-canvas" width="420" height="600" tabindex="0" aria-label="校徽合成棋盘。方向键移动，空格投放，P键暂停。">请使用支持 Canvas 的现代浏览器。</canvas>
+          <div class="board-watermark" aria-hidden="true"><span>NJU</span><small>诚朴雄伟 · 励学敦行</small></div>
+          <div class="empty-hint" id="empty-hint"><span>从这里开始</span><p>移动瞄准 · 点击投放</p><div class="hint-line"></div></div>
+          <div class="loading-panel" id="loading-panel"><span class="spinner"></span><p id="loading-message">正在准备校徽…</p><button id="retry-assets" class="primary-button" hidden>重新加载</button></div>
+          <div class="pause-panel" id="pause-panel" hidden><span class="overlay-icon">Ⅱ</span><h2>休息一下</h2><p>校徽们正在等你回来</p><button id="resume-button" class="primary-button">继续游戏</button></div>
+          <div class="result-panel" id="result-panel" hidden role="region" aria-label="本局结果"><div class="result-inner"><span class="result-kicker" id="result-kicker">本局结束</span><img id="result-logo" src="assets/logos/nju.png" alt="南京大学校徽" width="92" height="92"><h2 id="result-title">下次，再近一步。</h2><p id="result-copy"></p><div class="result-score"><span>本局得分</span><strong id="result-score">0</strong></div><button id="play-again" class="primary-button">再来一局 <span>↗</span></button></div></div>
+        </div>
+        <div class="arena-bottom"><span id="play-hint">移动瞄准，点击投放</span><button id="pause-button" aria-label="暂停游戏" title="暂停游戏（P）"><svg viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></svg></button></div>
+        <div class="keyboard-hint"><kbd>←</kbd><kbd>→</kbd> 移动 <span></span><kbd>空格</kbd> 投放</div>
+      </section>
+
+      <aside class="evolution" aria-label="合成图鉴"><div class="evolution-heading"><span class="eyebrow">合成图鉴</span><span id="progress-count">01 / 09</span></div><h2>你的进阶之路</h2><ol id="level-list"></ol><div class="evolution-foot"><span>两枚相同校徽</span><span class="merge-symbol">＋</span><span>一次新的出发</span></div></aside>
+    </main>
+    <footer class="footer"><span>一碰即合，一路向南大。</span><span>校园趣味创作 · 合成顺序为游戏设定</span></footer>
+  </div>
+  <dialog id="help-dialog"><button class="dialog-close" id="close-help" aria-label="关闭玩法">×</button><span class="eyebrow">HOW TO PLAY</span><h2>小校徽，大目标。</h2><ol><li><b>瞄准落点</b><p>电脑移动鼠标后点击；手机按住拖动、松手投放。也可以用方向键和空格。</p></li><li><b>让相同校徽相遇</b><p>两个同级校徽碰撞会合成下一级。下一枚只会来自前三级，间隔 0.4 秒可再次投放。</p></li><li><b>留意上方警戒线</b><p>刚投下的球有 1 秒缓冲；其他球连续越线 2 秒，游戏结束。</p></li><li><b>合成南京大学</b><p>每次合成获得 2 的新等级次方分数。合成南大即通关！</p></li></ol><button id="understood-button" class="primary-button">明白了，开始合成</button></dialog>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+</body>
+</html>
